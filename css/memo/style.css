@@ -1,0 +1,55 @@
+* {
+  margin: 0px;
+}
+
+.head {
+  background-color: orange;
+  text-align: center;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.container {
+  background-color: rgb(238, 238, 238);
+  padding-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.memo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.title {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.list {
+  font-size: 0.8rem;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.date {
+  font-size: 0.6rem;
+  text-align: right;
+  color: gray;
+}
+
+footer {
+  background-color: rgb(238, 238, 238);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 60px;
+}
