@@ -1,0 +1,40 @@
+.card-container {
+  background-color: lightgray;
+  padding: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  height: 100%;
+  padding: 30px;
+}
+
+.card-header {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.card-body {
+  font-size: 1rem;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card-footer {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+span {
+  background-color: lightblue;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
