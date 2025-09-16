@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI 생성형 AI 도구</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header">
+        <div class="left">
+          <div>BookReview</div>
+        </div>
+        <div class="right">
+          <button>로그인</button>
+          <button>회원가입</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <nav class="sidebar">
+        <div class="top">
+          <div class="sidebar-title">책 검색</div>
+          <div>
+            <input
+              type="text"
+              placeholder="책 제목, 저자 검색..."
+              class="search"
+            />
+          </div>
+        </div>
+
+        <div class="middle">
+          <div class="sidebar-title">카테고리</div>
+          <div class="list-group">
+            <a href="#" class="list-item">전체</a>
+            <a href="#" class="list-item">소설</a>
+            <a href="#" class="list-item">에세이</a>
+            <a href="#" class="list-item">경영/경제</a>
+            <a href="#" class="list-item">과학/기술</a>
+            <a href="#" class="list-item">역사/문화</a>
+            <a href="#" class="list-item">예술/디자인</a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="profile-content">
+            <div class="profile-img">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAIVBMVEXY2Njz8/Pq6urv7+/h4eHb29vo6Oje3t7j4+Pt7e3p6ekmc3lwAAADMElEQVR4nO2bC3KDMAxEMeab+x+4JZQBEkhBlq2NZt8JvGOtPkZUFSGEEEIIIYQQQgghhBBCCCEEnXbo6hjDLzHW3dBan0dEO9ThjfrrxDQHKv60NNZnu0ETz2Q8w+xbpPQfZTyl9NZnvEB7GlS7AIP3SnNFxgR4fHVXdYTQWZ/1A+14XUcII2x4tf+6fE8EVXJXB6qS+zpAldzyx8Jofep3buSrLXC563L9eAWsnrRSHSFg2eRSX3JMbX32Lb1cRwhIHaQg865E69OviJ0+g+P3pAsBupLEC8G5koSUNQOSuBJqyAJGLRnShQzWGp4kRxZKbKXrCMFaw4SCRTBMomARDJMIB5E9CGOJgtcx3J7Yn8wgdCluhGjogMi/FEIhmXBjdjdC3BRENy2Km6bRTRvvZrDyM+q6eXxw8xzk5oHOz5Opm0dsP58V3Hzo8fPpzc3HUD+fp90sDPhZ4fCzVONnzcnN4pmfVUA/y5mVm3XZys8Cs5+V8srNkv+Ek98uJpz8CDPh5NekGRc/ixFCCCHky2mb4TGO8cLkHuM4PoYGsGfph1r0Ih/rAWc2Oexz74DRE59PHre0GE8pvcoiykxnF2O96Ln3nNFGSqMs4ymlfIT9/1Qio/ADS6vojVe6gilMZUXrnFKbKfeeqiWUed5OXti4QgHTZ3THltxv9fnDaiFveOVKukfkTMRJmxr3yaakiM23ZLJ8cR2ZlBjoyKKksD8W1H1ipENdiWQ/QwflrYJidfAd1b2bQn3JMYrdiknCWlFLXSo/VqSgZRNDg8wo2STzPHgFlZnRPLAmNILLNGMtKGQus5K+J73Am5X0PckL9MYlZCW1mJin3oXEFAzikIk0l8BcSOKVAF1I2pVA1JCFlFpiffY9ch0wuXdGnoFVvnPqIf6JCaJd3CJtHQH69z3Sbh4ssuSxZX3ud2Q6oKrhjKwmwllEahI4i0hNAjJSbZGNV9anPkKiA64cTkhKIlijNSNptwCTlixtPawPfcRDIARoyl2RzLtuhACWEVkhcSPE+szHUAgaFIIGhaBBIWhQCBoUggaFoEEhaFAIGhSCBoWgQSFoUAgap8f9Ac1KQOtCVp1TAAAAAElFTkSuQmCC"
+                alt="프로필 사진"
+                class="pf-img"
+              />
+            </div>
+            <div>닉네임</div>
+          </div>
+          <div class="profile-footer">
+            <div class="footer-item">읽은 책</div>
+            <div class="footer-item">평균 별점</div>
+            <div class="footer-item">팔로워</div>
+            <div class="footer-item">17권</div>
+            <div class="footer-item">4.1</div>
+            <div class="footer-item">25명</div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="content">
+        <div class="card">
+          <div class="card-row">
+            <div class="book-img">
+              <img
+                src="https://image.aladin.co.kr/product/27877/5/cover200/8954682154_3.jpg"
+                alt="책 이미지"
+              />
+            </div>
+            <div class="card-body">
+              <p class="book-title">작별하지 않는다</p>
+              <p class="book-writer">한강</p>
+              <p class="avg-score">9.0</p>
+              <p class="book-review">
+                우리는 왜 수많은 죽음을 외면할 수 없는지 이 소설로 알게 된다.
+                경하와 인선의 눈썹에 쌓인 눈만큼 내 눈에 눈물이 가득 고인다. 온
+                몸과 마음을 통과하는 소설이다.
+              </p>
+              <nav class="book-type">
+                <span class="hastag">#소설</span>
+              </nav>
+            </div>
+            <div class="card-footer">
+              <button class="footer-btn">공유하기</button>
+              <button class="footer-btn">상세보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row">
+            <div class="book-img">
+              <img
+                src="https://image.aladin.co.kr/product/17048/25/cover200/8932473900_1.jpg"
+                alt="책 이미지"
+              />
+            </div>
+            <div class="card-body">
+              <p class="book-title">이기적 유전자</p>
+              <p class="book-writer">리처드 도킨스</p>
+              <p class="avg-score">8.4</p>
+              <p class="book-review">
+                도킨스의 이 책은 누구나 다 들어본 책이지만, 읽기 쉬운 책은
+                아닙니다. 기본적으로 치밀한 논증을 바탕으로 하기 떄문입니다.
+                글을 분석적으로 읽어보고 싶다면 좋은 선택
+              </p>
+              <nav class="book-type">
+                <span class="hastag">#과학</span>
+              </nav>
+            </div>
+            <div class="card-footer">
+              <button class="footer-btn">공유하기</button>
+              <button class="footer-btn">상세보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row">
+            <div class="book-img">
+              <img
+                src="https://image.aladin.co.kr/product/33038/40/cover200/k562937688_1.jpg"
+                alt="책 이미지"
+              />
+            </div>
+            <div class="card-body">
+              <p class="book-title">내가 한 말을 내가 오해하지 않기로 함</p>
+              <p class="book-writer">문상훈</p>
+              <p class="avg-score">8.6</p>
+              <p class="book-review">
+                글에게 작가의 따뜻함과 조심스러움이 고스란히 느껴진다.
+              </p>
+              <nav class="book-type">
+                <span class="hastag">#에세이</span>
+              </nav>
+            </div>
+            <div class="card-footer">
+              <button class="footer-btn">공유하기</button>
+              <button class="footer-btn">상세보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row">
+            <div class="book-img">
+              <img
+                src="https://image.aladin.co.kr/product/32776/97/cover200/k502936287_3.jpg"
+                alt="책 이미지"
+              />
+            </div>
+            <div class="card-body">
+              <p class="book-title">에디토리얼 띵킹</p>
+              <p class="book-writer">최혜진</p>
+              <p class="avg-score">9.2</p>
+              <p class="book-review">
+                전달하고 싶은 바를 간결하게 전달하면서도 본인의 업에 대한 진심과
+                열정, 인간에 대한 사랑이 느껴졌습니다.
+              </p>
+              <nav class="book-type">
+                <span class="hastag">#예술</span>
+              </nav>
+            </div>
+            <div class="card-footer">
+              <button class="footer-btn">공유하기</button>
+              <button class="footer-btn">상세보기</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-row">
+            <div class="book-img">
+              <img
+                src="https://image.aladin.co.kr/product/2584/37/cover200/8998441012_3.jpg"
+                alt="책 이미지"
+              />
+            </div>
+            <div class="card-body">
+              <p class="book-title">모순</p>
+              <p class="book-writer">양귀자</p>
+              <p class="avg-score">9.1</p>
+              <p class="book-review">내게는 어떤 고전보다 더 가치 있는 책</p>
+              <nav class="book-type">
+                <span class="hastag">#소설</span>
+              </nav>
+            </div>
+            <div class="card-footer">
+              <button class="footer-btn">공유하기</button>
+              <button class="footer-btn">상세보기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
