@@ -223,7 +223,8 @@
 .card-footer {
   display: flex;
   flex-direction: column;
-  gap: 7rem;
+  justify-content: space-between;
+  align-self: stretch;
 }
 
 .footer-btn {
@@ -238,20 +239,28 @@
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .card-body {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .book-review {
     display: none;
   }
 
   .card-footer {
-    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 1rem;
   }
 
   .card-row {
-    justify-content: center;
+    flex-direction: column;
   }
 
   .card {
-    width: auto;
+    width: 80%;
   }
 }
