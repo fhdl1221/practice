@@ -34,14 +34,28 @@
       // 5. 완성한 li 요소를 quotesUl(ul 요소)에 추가
 
       getQuoteButton.addEventListener("click", () => {
-        // 아래 코드 작성
-        axios.get("https://dummyjson.com/quotes/random").then((res) => {
-          const li = document.createElement("li");
-          li.className = "text-lg mt-2";
-          li.textContent = res["data"]["quote"];
-          quotesUl.append(li);
-        });
+        axios
+          .get("https://dummyjson.com/quotes/random")
+          .then((res) => {
+            const li = document.createElement("li");
+            li.className = "text-lg mt-2";
+            li.textContent = res["data"]["quote"];
+            quotesUl.append(li);
+          })
+          .catch(console.log(error));
       });
+
+      // async 함수를 사용
+      /*
+      getQuoteButton.addEventListener("click", async () => {
+        const res = await axios.get("https://dummyjson.com/quotes/random");
+        const data = res["data"];
+        const li = document.createElement("li");
+        li.className = "text-lg mt-2";
+        li.textContent = data["quote"];
+        quotesUl.append(li);
+      });
+      */
     </script>
   </body>
 </html>

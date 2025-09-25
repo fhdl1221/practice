@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwindcss CDN -->
-    <script src="<https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4>"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <div class="p-8">
@@ -94,6 +94,10 @@
         const emailValue = form["elements"]["email"]["value"];
         const pwValue = form["elements"]["password"]["value"];
         const confirmValue = form["elements"]["confirmPassword"]["value"];
+
+        // console.log(emailValue);
+        // console.log(pwValue);
+        // console.log(confirmValue);
 
         if (emailValue === "") {
           emailError.textContent = "이메일을 입력해주세요";

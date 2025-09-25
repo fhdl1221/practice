@@ -30,7 +30,13 @@
 
       async function getCartProduct() {
         // 아래 코드 작성
-        const res = await axios.get("https://dummyjson.com/carts/1");
+        // const res = await axios.get("https://dummyjson.com/carts/1");
+        const URL = "https://dummyjson.com/carts/1";
+        const config = {
+          url: URL,
+          method: "get",
+        };
+        const res = await axios(config);
         const products = res["data"]["products"];
         console.log(products);
 
@@ -39,7 +45,7 @@
         products.forEach((product) => {
           const li = document.createElement("li");
           li.className = "text-lg mt-2";
-          li.textContent = product.title;
+          li.textContent = product["title"];
           cartList.append(li);
         });
       }
