@@ -5,15 +5,16 @@ export default function UserCard() {
     name: "김철수",
     age: 28,
     email: "kimcs@example.com",
-    profileImage: "<https://picsum.photos/id/237/200/300>",
+    profileImage: "https://picsum.photos/id/237/200/300",
   };
+  
   return (
     <>
       <div className="w-80 bg-white rounded-xl shadow-md overflow-hidden">
         <div className="p-6">
           <div className="flex justify-center mb-4">
             <img
-              src="<https://picsum.photos/id/237/200/300"
+              src={userData.profileImage}
               alt="사용자 프로필"
               className="w-24 h-24 rounded-full object-cover"
             />
