@@ -1,12 +1,10 @@
 import React from "react";
-import UserCard from "./UserCard/UserCard";
-import ProductCardContainer from "./ProductCard/ProductCardContainer";
-import UserCardContainer from "./UserCard/UserCardContainer";
+import Carts from "./Carts/Carts";
 
 export default function Main() {
   return (
     <>
-      <UserCardContainer></UserCardContainer>
+      <Carts></Carts>
     </>
   );
 }
