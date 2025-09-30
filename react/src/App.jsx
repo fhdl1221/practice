@@ -1,13 +1,10 @@
 import React from "react";
-import StringState from "./components/State/StringState";
-import NumberState from "./components/State/NumberState";
-import ObjectState from "./components/State/ObjectState";
-import ArrayState from "./components/State/ArrayState";
+import Main from "./components/Main";
 
 export default function App() {
   return (
     <>
-      <ArrayState></ArrayState>
+      <Main></Main>
     </>
   );
 }

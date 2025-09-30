@@ -1,10 +1,11 @@
 import React from "react";
-import Carts from "./Carts/Carts";
+import Counter from "./Counter/Counter";
+import Calculator from "./Calculator/Calculator";
 
 export default function Main() {
   return (
     <>
-      <Carts></Carts>
+      <Calculator></Calculator>
     </>
   );
 }
