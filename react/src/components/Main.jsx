@@ -1,10 +1,10 @@
 import React from "react";
-import QuoteContainer from "./DummyJSON/QuoteContainer";
+import Form from "./Signup/Form";
 
 export default function Main() {
   return (
     <>
-      <QuoteContainer></QuoteContainer>
+      <Form></Form>
     </>
   );
 }
