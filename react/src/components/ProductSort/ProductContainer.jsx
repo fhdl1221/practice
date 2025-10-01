@@ -14,18 +14,25 @@ export default function ProductContainer() {
     getProducts();
   }, []);
 
+  // function productSort(key, asc) {
+  //   const newSort = [...products].sort((a, b) => {
+  //     if (asc === true) {
+  //       if (a[key] < b[key]) return -1;
+  //       else if (a[key] > b[key]) return 1;
+  //       else return 0;
+  //     }
+  //     if (asc === false) {
+  //       if (a[key] < b[key]) return 1;
+  //       else if (a[key] > b[key]) return -1;
+  //       else return 0;
+  //     }
+  //   });
+  //   setProducts(newSort);
+  // }
+
   function productSort(key, asc) {
     const newSort = [...products].sort((a, b) => {
-      if (asc === true) {
-        if (a[key] < b[key]) return -1;
-        else if (a[key] > b[key]) return 1;
-        else return 0;
-      }
-      if (asc === false) {
-        if (a[key] < b[key]) return 1;
-        else if (a[key] > b[key]) return -1;
-        else return 0;
-      }
+      return asc ? a[key] - b[key] : b[key] - a[key];
     });
     setProducts(newSort);
   }
