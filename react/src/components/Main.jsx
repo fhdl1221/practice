@@ -1,10 +1,5 @@
 import React from "react";
-import Form from "./Signup/Form";
-
+import RecipeContainer from "./Recipe/RecipeContainer";
 export default function Main() {
-  return (
-    <>
-      <Form></Form>
-    </>
-  );
+  return <RecipeContainer></RecipeContainer>;
 }
