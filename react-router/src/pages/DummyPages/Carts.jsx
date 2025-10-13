@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import CartsList from "../components/CartsList";
+import CartsList from "../../components/CartsList";
 
 export default function Carts() {
   const navigate = useNavigate();

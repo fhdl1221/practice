@@ -1,5 +1,5 @@
 import React from "react";
-import ProductsList from "../components/ProductsList";
+import ProductsList from "../../components/ProductsList";
 import { useNavigate } from "react-router-dom";
 
 export default function Products() {

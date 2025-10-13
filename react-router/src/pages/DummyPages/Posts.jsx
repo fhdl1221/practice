@@ -1,5 +1,5 @@
 import React from "react";
-import PostsList from "../components/PostsList";
+import PostsList from "../../components/PostsList";
 import { useNavigate } from "react-router-dom";
 
 export default function Posts() {
