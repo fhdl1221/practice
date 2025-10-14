@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import PATHS from "../../constants/paths";
 
 export default function ProductDetail() {
   const { productId } = useParams();
@@ -21,7 +22,10 @@ export default function ProductDetail() {
   return (
     <div className="flex justify-center items-center p-4">
       <div className="bg-white border-2 border-amber-400 shadow-lg rounded-lg p-6 max-w-md w-full">
-        <Link to="/dummy/products" className="text-blue-400 mb-4 inline-block">
+        <Link
+          to={PATHS.DUMMY.PRODUCTS}
+          className="text-blue-400 mb-4 inline-block"
+        >
           상품 목록 페이지로 이동
         </Link>
         <h1 className="text-2xl font-bold mb-4">상품 상세 페이지</h1>

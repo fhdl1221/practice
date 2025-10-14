@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import PATHS from "../../constants/paths";
 
 export default function PostDetail() {
   const { postId } = useParams();
@@ -20,7 +21,7 @@ export default function PostDetail() {
   return (
     <div className="flex justify-center items-center p-4">
       <div className="bg-white border-2 border-amber-400 shadow-lg rounded-lg p-6 max-w-md w-full">
-        <Link to="/dummy/posts" className="text-blue-400 mb-4 inline-block">
+        <Link to={PATHS.DUMMY.POSTS} className="text-blue-400 mb-4 inline-block">
           게시글 목록 페이지로 이동
         </Link>
         <h1 className="text-2xl font-bold mb-4">게시글 상세 페이지</h1>

@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
+import PATHS from "../constants/paths";
 
 export default function PostsList() {
   const [posts, setPosts] = useState([]);
@@ -102,7 +103,9 @@ export default function PostsList() {
         {posts.map((post) => {
           return (
             <li key={post.id} className="m-4 p-4 border border-blue-400">
-              <Link to={`/dummy/posts/${post.id}`}>Post ID : {post.id}</Link>
+              <Link to={PATHS.DUMMY.getPostDetail(post.id)}>
+                Post ID : {post.id}
+              </Link>
               <p>Title : {post.title}</p>
               <p>{post.body}</p>
             </li>

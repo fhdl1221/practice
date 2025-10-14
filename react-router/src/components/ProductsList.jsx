@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
+import PATHS from "../constants/paths";
 
 export default function ProductsList() {
   const [products, setProducts] = useState([]);
@@ -101,7 +102,7 @@ export default function ProductsList() {
         {products.map((product) => {
           return (
             <li key={product.id} className="m-4 p-4 border border-blue-400">
-              <Link to={`/dummy/products/${product.id}`}>
+              <Link to={PATHS.DUMMY.getProductDetail(product.id)}>
                 Product ID : {product.id}
               </Link>
               <p>Title: {product.title}</p>
