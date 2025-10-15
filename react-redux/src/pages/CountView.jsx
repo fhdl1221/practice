@@ -8,8 +8,9 @@ export default function CountView() {
   const count = useSelector((state) => state.counter.count);
 
   return (
-    <div>
-      <div>전역 상태 count: {count}</div>
+    <div >
+      <div  className="flex justify-center mt-10 text-lg">전역 상태</div>
+      <div  className="flex justify-center mt-4 font-bold text-lg"> count: {count}</div>
     </div>
   );
 }

@@ -19,28 +19,28 @@ export default function StepSet() {
 
   return (
     <div>
-      <div className="mb-4">
-        <div>현재 단위: {step}</div>
-      </div>
-      <div className="flex gap-2">
+      <div className="flex gap-4 justify-center mt-10">
         <button
-          className="border-2 p-2 cursor-pointer"
+          className="border-2 border-gray-400 px-6 py-3 rounded-lg text-lg hover:bg-gray-100"
           onClick={() => handleSetStep(1)}
         >
           단위 1
         </button>
         <button
-          className="border-2 p-2 cursor-pointer"
+          className="border-2 border-gray-400 px-6 py-3 rounded-lg text-lg hover:bg-gray-100"
           onClick={() => handleSetStep(5)}
         >
           단위 5
         </button>
         <button
-          className="border-2 p-2 cursor-pointer"
+          className="border-2 border-gray-400 px-6 py-3 rounded-lg text-lg hover:bg-gray-100"
           onClick={() => handleSetStep(10)}
         >
           단위 10
         </button>
+      </div>
+      <div className="mt-8 flex justify-center font-bold text-lg">
+        <div>현재 단위: {step}</div>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ export default function CountIncrement() {
   // ...
   const dispatch = useDispatch();
   const step = useSelector((state) => state.counter.step);
+  const count = useSelector((state) => state.counter.count);
 
   function handleIncrement() {
     // 전역 상태 count 증가 로직
@@ -16,14 +17,18 @@ export default function CountIncrement() {
     dispatch(increment());
   }
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center mt-10 gap-10">
       <button
-        className="border-2 p-2 cursor-pointer"
-        onClick={() => handleIncrement()}
+        onClick={handleIncrement}
+        className="border-2 border-gray-400 px-6 py-3 rounded-lg text-lg hover:bg-gray-100"
       >
         전역 상태 count 증가
       </button>
-      <div>현재 단위: {step}</div>
+
+      <div className="flex gap-8 text-lg font-bold">
+        <div>현재 단위: {step}</div>
+        <div>현재 count: {count}</div>
+      </div>
     </div>
   );
 }
