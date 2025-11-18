@@ -64,7 +64,6 @@ app.jwtExpirationInMs=604800000
 vapid.public.key=<YOUR_VAPID_PUBLIC_KEY>
 vapid.private.key=<YOUR_VAPID_PRIVATE_KEY>
 vapid.subject=mailto:admin@softday.com
-```
 
 3. 실행 방법
 Bash
